@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int N; 
+    int m;
+    int zbroj = 0;
+    cin >> N;
+    for (int i = 1; i <= N; i++){
+        cin >> m;
+        zbroj += m;
+    }
+    cout << zbroj;
+    system ("pause");
+}
