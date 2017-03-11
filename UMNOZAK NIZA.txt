@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	int N; 
+	int m;
+	int umnozak = 1;
+	cin >> N;
+	
+    for (int i = 1; i <= N; i++) {
+        cin >> m;
+        umnozak *= m;
+    }
+	cout << umnozak;
+	system ("pause");
+}
