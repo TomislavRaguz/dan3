@@ -1,0 +1,28 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+	int ocjena = 1;
+	int i = 0;
+	float zbroj = 0;
+	float prosjek = 0;
+	
+    while (ocjena != 0) {
+        cin >> ocjena;
+        zbroj += ocjena;
+        if (ocjena != 0) {
+            i++;
+        }
+    }
+    if (ocjena == 1) {
+        prosjek = 1;
+        cout << prosjek;
+    }
+    else {
+        prosjek = zbroj/i;
+	    cout << setprecision(2) << fixed << prosjek;
+	}
+}
