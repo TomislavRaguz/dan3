@@ -19,8 +19,8 @@ int main()
 	for (int i = 0; i < 5; i++) {
 		if (x[i] == pozicija2) { pozicija2 = y[i]; }
 		else if (y[i] == pozicija2) { pozicija2 = x[i]; }
-
-	}if (pozicija1 > pozicija2) {
+		   
+	}if (pozicija1 < pozicija2) {
 	cout << pozicija1 << " " << pozicija2;
 	}
 	else {
