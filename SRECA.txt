@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int N; 
+    int B;
+    cin >> N;
+    int i = 1;
+    int broj = 0;
+    while (i <= N) {
+        cin >> B;
+        if (B >= i) {
+            broj++; 
+        }
+        i++;
+    }
+    cout << broj;
+    system ("pause");
+}
