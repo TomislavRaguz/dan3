@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    double X[15];
+    int B1;
+    int B2;
+    double niz[15];
+    for (int i = 0; i < 15; i++) {
+        cin >> X[i];
+        if (X[i] == 0) {
+            break;
+        }
+    }
+    cin >> B1;
+    cin >> B2;
+    for (int i = 0; i < 15; i++){
+        if (X[i] == 0) {
+            int j = 0;
+            while (i >= 0) {
+                niz[j] = X[i];
+                j++;
+                i--;
+            }
+            break;
+        }
+    }
+    cout << abs(niz[B2 - 1] - niz[B1 - 1]);
+}
